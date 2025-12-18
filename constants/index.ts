@@ -183,6 +183,11 @@ export const feedbackSchema = z.object({
       score: z.number(),
       comment: z.string(),
     }),
+    z.object({
+      name: z.literal("Enthusiasm"),
+      score: z.number(),
+      comment: z.string(),
+    }),
   ]),
   strengths: z.array(z.string()),
   areasForImprovement: z.array(z.string()),
